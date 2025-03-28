@@ -6,22 +6,25 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('adrian@jsmastery.pro');
+    navigator.clipboard.writeText('joellkebret05@gmail.com');
     setHasCopied(true);
     setTimeout(() => setHasCopied(false), 2000);
   };
 
   return (
-    <section className="my-20" id="about">
+    <section className="my-20 px-7" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+          <img 
+  src="assets/pfp.jpeg" 
+  alt="Joell Photo" 
+  className="w-full sm:w-[95%] mx-auto sm:h-[300px] h-fit object-cover rounded-sm" 
+/>
             <div>
-              <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
+              <p className="grid-headtext">A Bit About Me:</p>
               <p className="grid-subtext">
-                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+                I Am A Second-year Computer Science Student at The University of Guelph. Passionate About Innovating Seamless Digital Experiences Through Both Frontend and Backend Architecture, With a Focus on Data Engineering and Optimization.
               </p>
             </div>
           </div>
